@@ -1,18 +1,16 @@
-from circularLinkedList import circularLinkedListBasic
-
 class CacheSimulator:
     def __init__(self, cache_slots):
         self.cache_slots = cache_slots
-        self.cache = circularLinkedListBasic()
+        self.cache = []
         self.cache_hit = 0
-        self.tot_cnt = 1
+        self.tot_cnt = 0
     
     def do_sim(self, page):
         self.tot_cnt += 1
-        if self.cache.index(page) != (-2):
+        if page in self.cache:
             self.cache.remove(page)
             self.cache_hit += 1
-        elif self.cache.size() >= self.cache_slots:
+        elif len(self.cache) >= self.cache_slots:
             self.cache.pop(0)
         self.cache.append(page)
         # Do programming here! 
