@@ -1,6 +1,0 @@
-﻿  linkedlist.c
-C:\Users\kimgu\source\repos\LRU Simulator\LRU Simulator\linkedlist.c(3,44): warning C4028: 정식 매개 변수 2이(가) 선언과 다릅니다.
-C:\Users\kimgu\source\repos\LRU Simulator\LRU Simulator\linkedlist.c(220,13): warning C4098: 'copyLinkedList': 'void' 함수에서 값을 반환하고 있습니다.
-  main.c
-  코드를 생성하고 있습니다...
-  LRU Simulator.vcxproj -> C:\Users\kimgu\source\repos\LRU Simulator\x64\Debug\LRU Simulator.exe
